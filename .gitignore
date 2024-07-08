@@ -32,5 +32,6 @@ build/
 
 ### VS Code ###
 .vscode/
-src/main/resources/smtp.user
-src/main/resources/smtp.secret
+
+**/src/main/resources/smtp.user
+**/src/main/resources/smtp.secret

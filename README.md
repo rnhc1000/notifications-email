@@ -27,7 +27,7 @@ The design is structured as shown:
 ## _Screenshot_
 [![](./notification.png)]()
 ## _Links_
-- Live Site URL: [https://www.ferreiras.dev.br] 
+- Service Socket: [AMQChannel(amqp://guest@127.0.0.1:5672/,1),] 
 ## _Built with_
 
 [![My Skills](https://skillicons.dev/icons?i=java,spring,gmail,redhat,idea,git,github)](https://skillicons.dev)
@@ -49,6 +49,7 @@ public class MessageNotificationEmailService {
 
   @Autowired
   private JavaMailSender mailSender;
+  
   public void sendNewMail(String to, String subject, String body) {
 
     SimpleMailMessage message = new SimpleMailMessage();
